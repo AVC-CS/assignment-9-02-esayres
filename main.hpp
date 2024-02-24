@@ -27,7 +27,7 @@ Student *makeStudent(){
 
     //prev = tmp;
     for(int i = 0; i < N; i++){
-        tmp = (Student *)malloc(sizeof(Student));
+        tmp = new(Student);
         file >> tmp->id >> tmp->name >> tmp->major;
         tmp->next = NULL;
         if(i == 0){
